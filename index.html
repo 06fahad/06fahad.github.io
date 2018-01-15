@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+	<title>6ixmanfahad</title>
+</head>
+<body>
+	<header>
+		<h2 class = "uoft">Mohammad Fahad Rahman</h2>
+		<nav class="navbar">
+			<li><a href="#about" class="link smooth">About</a></li>
+			<li><a href="#projects" class="link smooth">Projects</a></li>
+			<li><a href="#contact" class="link smooth">Contact</a></li>
+		</nav>
+	</header>
+	
+	<section class = "hero">
+		<div class = "background-image" style = "background-image:url(assets/img/main.jpg);" >
+			
+		</div>
+		<div class="hero-content-area">
+			<h1>Hi, I'm Fahad,</h1>
+			<h3>a computer engineer and full stack developer</h3>
+			<a href="#" class = "btn">Download Resume</a>
+			<p></p>
+		</div>
+
+	</section>
+	
+	<section class="destinations" id="about">
+		<hr>
+		<div class= "info">
+			<div>
+				<h3 class="title">About</h3>
+				<p>
+					I'm a third year ECE student at the University of Toronto specializing in software and controls engineering. I have a broad range of interests that I continually strive to learn more about and gain skills and experience in, including web development and design, machine learning, AI and robotics.
+				</p>
+			</div>
+			<div>
+				<h3 class="title skills">My Skills</h3>
+				<div id = "front-end">
+					<h4>Front-End</h4>
+					<p class = "skills-text">HTML, CSS, JavaScript, Bootstrap, jQuery</p>
+				</div>
+				<div id = "back-end">
+					<h4>Back-End</h4>
+					<p class = "skills-text">NodeJS, MongoDB, PostgreSQL, PassportJS</p>
+				</div>
+				<div id = "apps">
+					<h4>Development</h4>
+					<p class = "skills-text">C++, Python, Java</p>
+				</div>
+				<div id = "embedded">
+					<h4>Embedded</h4>
+					<p class = "skills-text">Arduino, Verilog</p>
+				</div>
+				<div id = "math-analysis">
+					<h4>Mathmatical Analysis Tools</h4>
+					<p class = "skills-text">Matlab</p>
+				</div>
+
+			</div>
+		</div>
+		<!--<ul class="grid">
+			<li class="small" style="background-image:url(assets/img/mountain1.jpg"></li>
+			<li class="large" style="background-image:url(assets/img/mountain2.jpg"></li>
+			<li class="large" style="background-image:url(assets/img/mountain3.jpg"></li>
+			<li class="small" style="background-image:url(assets/img/mountain4.jpg"></li>
+		</ul>-->
+	</section>
+
+	<section class = "packages" id="projects">
+		<h3 class = "title">Some Of My Projects</h3>
+		<!--<p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>-->
+		<hr>
+
+		<ul class="grid">
+			<li>
+				<i></i>
+				<h4>YelpCamp</h4>
+				<p>YelpCamp is a web app where users can post about new campgrounds or leave reviews/comments about existing campgrounds that they have been to. Front-end built using bootstrap and back-end built on NodeJS, deployed using Heroku. NoSQL database implemented using MongoDB to maintain information about campgrounds, users, reviews, comments etc. Although still in development, you can check out the website <a href="https://hidden-scrubland-41124.herokuapp.com/">here</a>.</p>
+			</li>
+			<li>
+				<i></i>
+				<h4>Mapper103</h4>
+				<p>One of the larger projects that I have participated in, the Mapper103 is a geographcial information system. The application is built using C++ and uses openGL and the OpenStreetMaps API to create a functional mapping application. User is able to view map of any city, pan and zoom on the map, find shortest path from chosen location to destination, find the closest gas station/Starbucks etc. You can check out all the code on my github <a href="https://github.com/06fahad/mapper103">here</a>.</p>
+			</li>
+			<li>
+				<i></i>
+				<h4>Patatap Clone</h4>
+				<p>Patatap is a portable animation and sound kit. I created a slightly dumbed down version of it using howler.js and paper.js. Check it out <a href="https://github.com/06fahad/patatap_clone">here</a>. This is a front-end only app that I did just for fun so I haven't bothered to deploy it. You can easily run it on your browser by downloading the files from the git repo and opening the HTML file.</p>
+			</li>
+			<li>
+				<i></i>
+				<h4>To-Do List Web App</h4>
+				<p>A simple to-do list web app using jQuery that I developed in my spare time just for fun. You can check it out on my <a href = "https://github.com/06fahad/TodoList-Project">github</a>, download the files and run it on your browser by opening the HTML file on your browser.</p>
+			</li>
+		</ul>
+	</section>
+
+	<footer id="contact">
+		<h3>Contact Me</h3>
+		<hr>
+		<p>Get in touch with me at:</p>
+		<p id = "space">moefahad.rahman@mail.utoronto.ca</p>
+		<p>Check out code for this website, all my projects listed here and other projects on my github!</p>
+		<ul>
+			<li><a href="https://github.com/06fahad"><i class="fa fa-github-square""></i></a></li>
+		</ul>
+
+	</footer>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
+	<script>
+		$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+	</script>
+</body>
+</html>
+
